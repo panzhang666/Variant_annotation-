@@ -23,7 +23,7 @@ The input is a VCF file, and the output will be "output.csv" and "output.vcf".
       python variant_annoation_VCF.py -i input.vcf -o output
 
 
-If an output file is not specified the output will be written to "input_annotated.csv" and "input_annotated.vcf".
+If an output file is not specified, the output will be written to "input_annotated.csv" and "input_annotated.vcf".
                  
       python variant_annoation_VCF.py -i input.vcf
 
