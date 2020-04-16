@@ -1,6 +1,6 @@
 # Variant_annotation_VCF
 
-A small software program to output a CVS table and a VCF file with annotation for each variant in the input VCF file. Additional information for each variant is obtained via ExAC. To speed up computation, variants are queried in bulk with ExAC API, and annotation information is stored in list first and then append to a dataframe. 
+A small software program to output a CVS table and a VCF file with annotation for each variant in the input VCF file. Additional information for each variant is obtained via ExAC. To speed up computation, variants are queried in bulk with ExAC API, and annotation information is stored in the list first and then append to a data frame. 
 
 
 ### Dependancies:
@@ -32,16 +32,7 @@ If an output file is not specified, the output will be written to "input_annotat
 
 - In the output VCF file, annotations are appended to the INFO field using the ANNOT tag. The annotations are separated by a "|".
 - In the output csv file, basic information from original VCF file, such as "Chrom", "Position", "ID", "Type", "Ref", "Alt", is included as well as the annotations in ANNOT tag.
-- If a specific annoation is not available, "NA" will be used. For example, no allele frequency for a variant in EXaC database, RO = 0 so AO/RO can't be calculated, no variant information in EXaC database，etc.  
+- If a specific annotation is not available, "NA" will be used. For example, no allele frequency for a variant in EXaC database, RO = 0 so AO/RO can't be calculated, no variant information in EXaC database，etc.  
 - If there are mutiple alternate allele observations, AO/RO will be calculated for each of them and then join by ",".
 - If there are mutiple related geneID corresponding to the selected variant consequence, join all of them by ",".
 - If there are multiple consequences of the same severity, the first one alphabetically will be selected.
-
-
-
-
-
-
-
-
-
