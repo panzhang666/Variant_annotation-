@@ -40,5 +40,3 @@ If an output file is not specified, the output will be written to "input_annotat
 
 
 
-
-
