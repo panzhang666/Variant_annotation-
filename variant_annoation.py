@@ -6,7 +6,6 @@ Created on Sun Apr 13 02:32:32 2020
 @author: panzhang
 """
 
-
 import json
 import sys
 import requests
@@ -15,11 +14,13 @@ import os.path
 import pandas as pd
 import numpy as np
 
+
 #Add arguments
 parser = argparse.ArgumentParser()
 parser.add_argument("-i", type=str, help="File path to VCF file.")
 parser.add_argument("-o", type=str, help="File name for output file.")
 args = parser.parse_args()
+
 
 #Check if input VCF file exists
 if not args.i:
@@ -66,6 +67,7 @@ consequenceSeverity = {'3_prime_UTR_variant': 0,
                         'splice_donor_variant': 3,
                         'splice_acceptor_variant': 3}
 
+
 def get_var_list(vcfFile):
     """ 
     Function to loop through the VCF file to create a list that contains the variants in a format that the
@@ -80,11 +82,11 @@ def get_var_list(vcfFile):
             # Ignore header lines
             if line.startswith("#"):
                 continue
-            chrom, pos, _, ref, alt, *rest = line.strip().split('\t')
+            
+	    chrom, pos, _, ref, alt, *rest = line.strip().split('\t')
             apiFormattedVariants.append(r'\"' + "-".join((chrom, pos, ref, alt)) + r'\"')
     return(apiFormattedVariants)
     
-
 
 def get_exac_info(apiFormattedVariants):
     """
@@ -100,6 +102,7 @@ def get_exac_info(apiFormattedVariants):
     r = requests.post(url, eval(data))
     exacInformation = json.loads(r.text)
     return(exacInformation)
+
 
 def extract_exac_annot(exacInformation, consequenceSeverity):
     """
@@ -160,7 +163,8 @@ def extract_exac_annot(exacInformation, consequenceSeverity):
                 continue
             
     return(exacAlleleFreq, variantConsequences, variantGeneID)
-    
+
+
 def get_basic_info(vcfLine):
     """
     Function to retrieve relevant annotations from each variant hit
