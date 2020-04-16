@@ -17,7 +17,10 @@ Package used: json, argparse, requests, pandas, numpy, os.path
 6. The related GeneID from EXaC - the related GeneIDs are picked based on the selected variant consequence.
 
 ### Usage: 
+
   python variant_annoation_VCF.py -i Challenge_data.vcf -o Challenge_data_test
+
+
 -i, input VCF file
 -o, output tsv file
 
