@@ -8,13 +8,13 @@ Language: python 3
 
 Package used: json, argparse, requests, pandas, numpy, os.path
 
-### Annotated information: 
+### Annotated information 
 1. Reads depth at the site of variation; 
 2. Number of reads supporting the variant; 
 3. Reads supporting the variant versus those supporting reference reads; 
 4. The Allele Frequency of variant from EXaC;
-5. The consequence of variant from EXaC - the most severe consequence is selected when multiple consequences are available based on the putative impact for some Variant Consequences http://snpeff.sourceforge.net/VCFannotationformat_v1.0.pdf;
-6. The related GeneID from EXaC - the related GeneIDs are picked based on the selected variant consequence.
+5. The consequence of variant from EXaC: the most severe consequence is selected when multiple consequences are available, and the severity information is based on the putative impact for some Variant Consequences http://snpeff.sourceforge.net/VCFannotationformat_v1.0.pdf;
+6. The related GeneID from EXaC: the related GeneIDs are picked based on the selected variant consequence.
 
 ### Usage: 
 
