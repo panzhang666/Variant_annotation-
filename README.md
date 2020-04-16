@@ -1,4 +1,4 @@
-# Variant_annotation_Tempus
+# Variant_annotation_VCF
 
 A small software program to output a CVS table and a VCF file with annotation for each variant in the input VCF file. Additional information for each variant is obtained via ExAC. To speed up computation, variants are queried in bulk with ExAC API, and annotation information is stored in list first and then append to a dataframe. 
 
