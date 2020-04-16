@@ -30,11 +30,9 @@ If an output file is not specified, the output will be written to "input_annotat
 
 ### More information
 
-If a specific annoation is not available, "NA" will be used. 
-
-In the output VCF file, annotations are appended to the INFO field using the ANNOT tag. The annotations are separated by a |.
-
-In the output csv file, basic information from original VCF file, such as "Chrom", "Position", "ID", "Type", "Ref", "Alt", is included as well as the annotations in ANNOT tag.
+- If a specific annoation is not available, "NA" will be used. 
+- In the output VCF file, annotations are appended to the INFO field using the ANNOT tag. The annotations are separated by a |.
+- In the output csv file, basic information from original VCF file, such as "Chrom", "Position", "ID", "Type", "Ref", "Alt", is included as well as the annotations in ANNOT tag.
 
 
 
