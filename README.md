@@ -18,7 +18,7 @@ Package used: json, argparse, requests, pandas, numpy, os.path
 
 ### Usage: 
 
-  python variant_annoation_VCF.py -i Challenge_data.vcf -o Challenge_data_test
+      python variant_annoation_VCF.py -i Challenge_data.vcf -o Challenge_data_test
 
 
 -i, input VCF file
