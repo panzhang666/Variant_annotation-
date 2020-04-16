@@ -4,6 +4,7 @@ A small software program to output a table annotating each variant in the file. 
 
 ### Dependancies:
 Language: python 3
+
 Package used: json, argparse, requests, pandas, numpy, os.path
 
 ### Annotated information: 
