@@ -18,10 +18,14 @@ Package used: json, argparse, requests, pandas, numpy, os.path
 
 ### Usage: 
 
-      python variant_annoation_VCF.py -i Challenge_data.vcf -o Challenge_data_test
+The input is a VCF file, and the output will be "output.csv" and "output.vcf".
+
+      python variant_annoation_VCF.py -i input.vcf -o output
 
 
--i, input VCF file
--o, output tsv file
+If an output file is not specified the output will be written to "input_annotated.csv" and "input_annotated.vcf".
+                 
+      python variant_annoation_VCF.py -i input.vcf
+
 
 
