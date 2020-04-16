@@ -2,10 +2,10 @@
 
 A small software program to output a table annotating each variant in the file. Additional information for each variant is gathered via ExAC. To speed up computation time, Variants are queried in bulk with ExAC API and  . Only the most deleterious possibility is selected from each variant entry.
 
-## Language: python 3
-## Package used: json, argparse, requests, pandas, numpy, os.path
+### Language: python 3
+### Package used: json, argparse, requests, pandas, numpy, os.path
 
-## The purpose of variant_annoation_VCF.py is to annotate the variants in s VCF file with: 
+### The purpose of variant_annoation_VCF.py is to annotate the variants in s VCF file with: 
 1. Reads depth at the site of variation; 
 2. Number of reads supporting the variant; 
 3. Reads supporting the variant versus those supporting reference reads; 
