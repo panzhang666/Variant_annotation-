@@ -271,7 +271,4 @@ output_table.columns= ["Chrom","Pos","ID", "Type", "Ref", "Alt", "Depth","Num Re
 output_table.to_csv(outputTable,index=False)
 outputVcf.close()
            
-"""
-Thank you Tempus bioinformatics team for taking the time to review my code!
--Pan Zhang
-"""
+
